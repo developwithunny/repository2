@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@keyframes movieWall {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes movieWallSlow {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-35%);
+  }
+}
+
+@keyframes movieWallFast {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-60%);
+  }
+}
+
+.animate-movie-wall {
+  animation: movieWall 35s linear infinite;
+}
+
+.animate-movie-wall-slow {
+  animation: movieWallSlow 45s linear infinite;
+}
+
+.animate-movie-wall-fast {
+  animation: movieWallFast 28s linear infinite;
+}
